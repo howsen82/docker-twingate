@@ -8,10 +8,10 @@ services:
     environment:
       - SSL_CERT_FILE=/etc/ssl/certs/ca-certificates.crt
       - TWINGATE_API_ENDPOINT=/connector.stock
-      - TWINGATE_NETWORK=  # Set the environment variable "TWINGATE_NETWORK"
-      - TWINGATE_ACCESS_TOKEN=  # Set the environment variable "TWINGATE_ACCESS_TOKEN"
-      - TWINGATE_REFRESH_TOKEN=  # Set the environment variable "TWINGATE_REFRESH_TOKEN"
-      - TWINGATE_LABEL_HOSTNAME=  # Set the environment variable "TWINGATE_LABEL_HOSTNAME"
+      - TWINGATE_NETWORK=<TENANT NAME>  # Set the environment variable "TWINGATE_NETWORK"
+      - TWINGATE_ACCESS_TOKEN=<ACCESS TOKEN>  # Set the environment variable "TWINGATE_ACCESS_TOKEN"
+      - TWINGATE_REFRESH_TOKEN=<REFRESH TOKEN>  # Set the environment variable "TWINGATE_REFRESH_TOKEN"
+      - TWINGATE_LABEL_HOSTNAME=<HOST NAME>  # Set the environment variable "TWINGATE_LABEL_HOSTNAME"
       - TWINGATE_LOG_ANALYTICS=v2 #
       - TWINGATE_LOG_LEVEL=3
     sysctls:
